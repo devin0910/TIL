@@ -11,5 +11,8 @@
 ### 添加淘宝源地址
 `gem sources -a http://ruby.taobao.org/`
 
+### 更新源的缓存
+`gem sources -u`
+
 
 [了解更多](http://jingyan.baidu.com/article/4853e1e51c770f1909f726fe.html)
