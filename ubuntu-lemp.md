@@ -4,6 +4,7 @@
  1. 备份源文件
  `cp /etc/apt/sources.list /etc/apt/sources.list.backup`
  2. 覆盖源文件内容
+
 deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
@@ -14,6 +15,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+
  3. 更新源
 	 `apt-get update`
 
@@ -41,5 +43,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
  `echo "deb http://ppa.launchpad.net/nginx/stable/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nginx-stable.list`
 
  `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C`
+ 
  `sudo apt-get update`
+ 
  `sudo apt-get install nginx`
